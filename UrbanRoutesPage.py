@@ -1,5 +1,6 @@
 import data
 import locators
+from locators import locators
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
@@ -38,45 +39,45 @@ class UrbanRoutesPage:
         self.driver = driver
 
     def set_from(self, from_address):                                           # Casilla para ingrear dirección de origen
-        self.driver.find_element(locators.from_field).send_keys(from_address)
+        self.driver.find_element(*locators.from_field).send_keys(from_address)
 
     def set_to(self, to_address):                                               # Casilla para ingrear dirección de destino
-        self.driver.find_element(locators.to_field).send_keys(to_address)
+        self.driver.find_element(*locators.to_field).send_keys(to_address)
 
     def get_from(self):
-        return self.driver.find_element(locators.from_field).get_property('value')
+        return self.driver.find_element(*locators.from_field).get_property('value')
 
     def get_to(self):
-        return self.driver.find_element(locators.to_field).get_property('value')
+        return self.driver.find_element(*locators.to_field).get_property('value')
 
     def click_book_a_taxi_button(self):                                         # Hace click en Botón "pedir un taxi" del menu inicial
-        self.driver.find_element(locators.book_a_taxi_button).click()
+        self.driver.find_element(*locators.book_a_taxi_button).click()
 
     def comfort_fare_button(self):                                              # Hace click para seleccionar la Tarifa "Comfort"
         self.driver.find_element(*self.comfort_fare).click()
 
     def set_phone_input_box(self):                                               # Hace click en casilla Numero de telefono en menu de pedido
-        self.driver.find_element(self.phone_input_box).click()
+        self.driver.find_element(*self.phone_input_box).click()
 
     def phone_popup_window_input_box(self):                                      # Ingresar número de telefono en ventana emergente
-        self.driver.find_element(self.add_phone_input_box).send_keys(data.phone_number)
+        self.driver.find_element(*self.add_phone_input_box).send_keys(data.phone_number)
 
     def phone_popup_window_input_box_next(self):                                 # Dar click en Siguiente para con el registro del  numero de telefono
-        self.driver.find_element(self.phone_popup_window_input_box_next ).click()
+        self.driver.find_element(*self.phone_popup_window_input_box_next ).click()
 
     def sms_code_inputbox(self):  # Código SMS
         code_sms = retrieve_phone_code                                           # Dar click en casilla para ingresar SMS con funcion pre establecida y completar el registro del numero de teleno
         print(code_sms)                    ##############esta funcion no genera el SMS terminar el proceso ---- revisar #######################
-        self.driver.find_element(self.add_sms_code).send_keys(code_sms)
+        self.driver.find_element(*self.add_sms_code).send_keys(code_sms)
 
     def code_confirm_button(self):                                               # Dar click en Boton confirmar SMS en ventana emergente
-        self.driver.find_element(self.confirm_button_sms).click()
+        self.driver.find_element(*self.confirm_button_sms).click()
 
     def add_payment_method_box(self):                                            # Dar click en casilla para agregar metodo de pago - tarjeta de credito
-        self.driver.find_element(self.payment_method_box).click()
+        self.driver.find_element(*self.payment_method_box).click()
 
     def add_new_credit_card(self):                                               # Dar click en boton '+' en la ventana para agregar nueva tarjeta de credito
-        self.driver.find_element(self.add_cc_button).click()
+        self.driver.find_element(*self.add_cc_button).click()
 
     def cc_number_field(self):                                                   # Dar click en casilla para agregar numero de tarjeta de credito
         self.driver.find_element(self.add_cc_number).click()

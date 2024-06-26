@@ -1,5 +1,5 @@
 import data
-from locators import UrbanRoutesPage
+from locators import locators
 from UrbanRoutesPage import UrbanRoutesPage
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service

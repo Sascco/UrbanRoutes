@@ -1,7 +1,7 @@
 
 from selenium.webdriver.common.by import By
 
-class UrbanRoutesPage:                                                                                              # Localizadores usados:
+class locators:                                                                                              # Localizadores usados:
 
     from_field = (By.ID, 'from')                                                                                    #Casilla para ingrear dirección de origen
     to_field = (By.ID, 'to')                                                                                        #Casilla para ingrear direccion de destino
