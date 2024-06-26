@@ -54,50 +54,50 @@ class UrbanRoutesPage:
         self.driver.find_element(*locators.book_a_taxi_button).click()
 
     def comfort_fare_button(self):                                              # Hace click para seleccionar la Tarifa "Comfort"
-        self.driver.find_element(*self.comfort_fare).click()
+        self.driver.find_element(*locators.comfort_fare).click()
 
     def set_phone_input_box(self):                                               # Hace click en casilla Numero de telefono en menu de pedido
-        self.driver.find_element(*self.phone_input_box).click()
+        self.driver.find_element(*locators.phone_input_box).click()
 
     def phone_popup_window_input_box(self):                                      # Ingresar número de telefono en ventana emergente
-        self.driver.find_element(*self.add_phone_input_box).send_keys(data.phone_number)
+        self.driver.find_element(*locators.add_phone_input_box).send_keys(data.phone_number)
 
     def phone_popup_window_input_box_next(self):                                 # Dar click en Siguiente para con el registro del  numero de telefono
-        self.driver.find_element(*self.phone_popup_window_input_box_next ).click()
+        self.driver.find_element(*locators.phone_popup_window_input_box_next ).click()
 
     def sms_code_inputbox(self):  # Código SMS
         code_sms = retrieve_phone_code                                           # Dar click en casilla para ingresar SMS con funcion pre establecida y completar el registro del numero de teleno
         print(code_sms)                    ##############esta funcion no genera el SMS terminar el proceso ---- revisar #######################
-        self.driver.find_element(*self.add_sms_code).send_keys(code_sms)
+        self.driver.find_element(*locators.add_sms_code).send_keys(code_sms)
 
     def code_confirm_button(self):                                               # Dar click en Boton confirmar SMS en ventana emergente
-        self.driver.find_element(*self.confirm_button_sms).click()
+        self.driver.find_element(*locators.confirm_button_sms).click()
 
     def add_payment_method_box(self):                                            # Dar click en casilla para agregar metodo de pago - tarjeta de credito
-        self.driver.find_element(*self.payment_method_box).click()
+        self.driver.find_element(*locators.payment_method_box).click()
 
     def add_new_credit_card(self):                                               # Dar click en boton '+' en la ventana para agregar nueva tarjeta de credito
-        self.driver.find_element(*self.add_cc_button).click()
+        self.driver.find_element(*locators.add_cc_button).click()
 
     def cc_number_field(self):                                                   # Dar click en casilla para agregar numero de tarjeta de credito
-        self.driver.find_element(self.add_cc_number).click()
+        self.driver.find_element(*locators.add_cc_number).click()
 
     def add_credit_card_number(self):                                            # Se importa numero de tarjeta de credito como medio de pago desde data.py
-        self.driver.find_element(self.add_cc_number).send_keys(data.card_number)
+        self.driver.find_element(*locators.add_cc_number).send_keys(data.card_number)
 
     def cc_code_field(self):                                                     # se diligencia codigo de tarjeta de credito desde data.py
-        self.driver.find_element(self.add_code_input_box).send_keys(data.card_code)
+        self.driver.find_element(*locators.add_code_input_box).send_keys(data.card_code)
 
     def exit_payment_popup(self):                                               # Dar click en boton (X) de la ventana emergente para vincular tarjeta como medio de pago
-        self.driver.find_element(self.exit_payment_popup_window).click()
+        self.driver.find_element(*locators.exit_payment_popup_window).click()
 
     def message_to_driver_field(self):                                          # Casilla para ingresar mensaje para el conductor, se importa desde data.py
-        self.driver.find_element(self.special_request_for_driver).send_keys(data.message_for_driver)
+        self.driver.find_element(*locators.special_request_for_driver).send_keys(data.message_for_driver)
 
     def blanket_and_scarves(self):                                              # Dar click en checkbox para seleccionar manta y pañuelos como pedido especial para el servicio
-        self.driver.find_element(self.blanket_and_scarves_request).click()
+        self.driver.find_element(*locators.blanket_and_scarves_request).click()
 
     def click_add_ice_cream_button(self):
-        self.driver.find_element(self.ice_cream_counter).click()
+        self.driver.find_element(*locators.ice_cream_counter).click()
 
 

@@ -27,28 +27,30 @@ class TestUrbanRoutes:
     #prueba 1 - Configurar la dirección (esta parte se ha escrito para ti como ejemplo).
     def test_set_route(self):
         self.driver.get(data.urban_routes_url)
-        sleep(5)
+        sleep(2)
         set_route = UrbanRoutesPage(self.driver)
         set_route.set_from(data.address_from)
         set_route.set_to(data.address_to)
-        sleep(5)
+        sleep(2)
         from_1 = set_route.get_from()
         assert from_1 == data.address_from
         set_route.click_book_a_taxi_button()
-        sleep(5)
+        sleep(2)
 
-'''
+    # prueba 2
     def test_comfort_fare(self):
         self.driver.get(data.urban_routes_url)
         set_route = UrbanRoutesPage(self.driver)
         set_route.set_from(data.address_from)
         set_route.set_to(data.address_to)
-        comfort_fare = UrbanRoutesPage()
-        sleep(3)
-        comfort_fare.comfort_fare_button()
-        sleep(3)
+        sleep(2)
+        set_route.click_book_a_taxi_button()
+        sleep(2)
+        set_route.comfort_fare_button()
+        sleep(2)
 
 
+'''
     def test_fill_phone_number_box(self):  # Rellenar el número de teléfono.
         test_set_location = UrbanRoutesPage(self.driver)
         phone_input = test_set_location.phone_input_box
