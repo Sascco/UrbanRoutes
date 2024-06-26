@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68f574cb-175f-4963-aac7-54223c6da432" name="Changes" comment="Prueba vino">
+    <list default="true" id="68f574cb-175f-4963-aac7-54223c6da432" name="Changes" comment="Test 1,2 Passed 100 %">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UrbanRoutesPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanRoutesPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
@@ -142,7 +142,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719366843119</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Test 1 Passed">
+      <option name="closed" value="true" />
+      <created>1719368610524</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719368610524</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Test 1,2 Passed 100 %">
+      <option name="closed" value="true" />
+      <created>1719372782599</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719372782599</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +181,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Prueba 1" />
     <MESSAGE value="Prueba vino" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prueba vino" />
+    <MESSAGE value="Test 1 Passed" />
+    <MESSAGE value="Test 1,2 Passed 100 %" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test 1,2 Passed 100 %" />
   </component>
 </project>

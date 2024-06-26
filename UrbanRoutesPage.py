@@ -91,6 +91,9 @@ class UrbanRoutesPage:
     def exit_payment_popup(self):                                               # Dar click en boton (X) de la ventana emergente para vincular tarjeta como medio de pago
         self.driver.find_element(*locators.exit_payment_popup_window).click()
 
+    def click_message_box_input(self):
+        self.driver.find_element(locators.click_message_box).click()
+
     def message_to_driver_field(self):                                          # Casilla para ingresar mensaje para el conductor, se importa desde data.py
         self.driver.find_element(*locators.special_request_for_driver).send_keys(data.message_for_driver)
 

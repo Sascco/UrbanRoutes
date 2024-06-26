@@ -20,6 +20,7 @@ class locators:                                                                 
     add_payment_method_button = (By.XPATH, '//*[@id="root"]/div/div[2]/div[2]/div[2]/form/div[3]/button[1]')        #Boton para agregar tarjeta como medio de pago
     exit_payment_popup_window = (By.XPATH, '//*[@id="root"]/div/div[2]/div[2]/div[1]/button')                       #Boton para cerrar ventana emergente para agregar tarjeta como medio de pago
     special_request_for_driver = (By.XPATH,  '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[3]/div/label')    #Casilla para ingresar mensaje para el conductor, se importa desde data.py
+    click_message_box = (By. ID, 'id="comment"')
     blanket_and_scarves_request = (By.CLASS_NAME, "slider round")                                                   #Toggle para seleccionar manta y pañuelos como requerimiento para el viaje
     add_ice_cream_button = (By.XPATH, "(//div[@class='counter-plus'])[1]")                                          #Counter for icecream - terminar localizadores y revisar metodos y funciones.
     ice_cream_counter = (By.XPATH, "(//div[@class='counter']//div)[2]")
