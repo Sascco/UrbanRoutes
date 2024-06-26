@@ -74,7 +74,7 @@ class UrbanRoutesPage:
         self.driver.find_element(*locators.confirm_button_sms).click()
 
     def add_payment_method_box(self):                                            # Dar click en casilla para agregar metodo de pago - tarjeta de credito
-        self.driver.find_element(*locators.payment_method_box).click()
+        self.driver.find_element(locators.payment_method_box).click()
 
     def add_new_credit_card(self):                                               # Dar click en boton '+' en la ventana para agregar nueva tarjeta de credito
         self.driver.find_element(*locators.add_cc_button).click()

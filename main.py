@@ -35,7 +35,7 @@ class TestUrbanRoutes:
         set_route.click_book_a_taxi_button()
         sleep(2)
 
-    # prueba 2
+    #prueba 2
     def test_comfort_fare(self):
         self.driver.get(data.urban_routes_url)
         set_route = UrbanRoutesPage(self.driver)
@@ -59,35 +59,45 @@ class TestUrbanRoutes:
     #     sleep(2)
 
     #
-    # def test_add_payment_method(self):  # Agregar tarjeta de credito como metodo de pago
-    #     page = UrbanRoutesPage(self.driver)
-    #     sleep(2)
-    #     self.driver.find_element(page.add_cc_button).click()
+    def test_add_payment_method(self):  # Agregar tarjeta de credito como metodo de pago
+        self.driver.get(data.urban_routes_url)
+        set_route = UrbanRoutesPage(self.driver)
+        set_route.set_from(data.address_from)
+        set_route.set_to(data.address_to)
+        set_route.click_book_a_taxi_button()
+        sleep(2)
+        set_route.add_new_credit_card()
+        sleep(2)
+        set_route.add_credit_card_number()
+        sleep(2)
+        set_route.cc_code_field()
+        set_route.exit_payment_popup()
 
     #prueba 5 Escribir un mensaje para el controlador.
-    def test_special_instruction_for_service(self): # Mensaje para conductor
-        self.driver.get(data.urban_routes_url)
-        set_route = UrbanRoutesPage(self.driver)
-        set_route.set_from(data.address_from)
-        set_route.set_to(data.address_to)
-        set_route.click_book_a_taxi_button()
-        sleep(3)
-        set_route.comfort_fare_button()
-        set_route.click_message_box_input()
-        set_route.message_to_driver_field()
-        #assert set_route.driver.find_element(data.message_for_driver).get_property('value') == data.message_for_driver
-        sleep(3)
+    # def test_special_instruction_for_service(self): # Mensaje para conductor
+    #     self.driver.get(data.urban_routes_url)
+    #     set_route = UrbanRoutesPage(self.driver)
+    #     set_route.set_from(data.address_from)
+    #     set_route.set_to(data.address_to)
+    #     set_route.click_book_a_taxi_button()
+    #     sleep(2)
+    #     set_route.comfort_fare_button()
+    #     sleep(2)
+    #     set_route.click_message_box_input()
+    #     set_route.message_to_driver_field()
+    #     #assert set_route.driver.find_element(data.message_for_driver).get_property('value') == data.message_for_driver
+    #     sleep(3)
 
 
-    def test_ordering_blanket(self): #Pedir una manta y pañuelos.
-        self.driver.get(data.urban_routes_url)
-        set_route = UrbanRoutesPage(self.driver)
-        set_route.set_from(data.address_from)
-        set_route.set_to(data.address_to)
-        set_route.click_book_a_taxi_button()
-        sleep(3)
-        set_route = UrbanRoutesPage(self.driver)
-        set_route.blanket_and_scarves()
+    # def test_ordering_blanket(self): #Pedir una manta y pañuelos.
+    #     self.driver.get(data.urban_routes_url)
+    #     set_route = UrbanRoutesPage(self.driver)
+    #     set_route.set_from(data.address_from)
+    #     set_route.set_to(data.address_to)
+    #     set_route.click_book_a_taxi_button()
+    #     set_route.comfort_fare_button()
+    #     sleep(3)
+    #     set_route.blanket_and_scarves()
 
     # def test_add_icecream(self): # Pedir 2 helados.
     #     self.driver.get(data.urban_routes_url)
