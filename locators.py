@@ -13,7 +13,7 @@ class locators:                                                                 
     add_SMS_input_box = (By. XPATH, '//*[@id="code"]')                                                              #Casilla para ingrear el codigo SMS despues de ingresar telefono
     add_sms_code = (By.ID, "code")                                                                                  #Casilla para ingresar SMS y terminar registro telefono
     confirm_button_sms = (By.XPATH, '//*[@id="root"]/div/div[1]/div[2]/div[2]/form/div[2]/button[1]')               #Boton de confirmar el codigo en la ventana para ingresar SMS
-    payment_method_box = (By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[2]/div[2]')                #Boton para agregar medio de pago
+    payment_method_box = (By.CLASS_NAME, 'class="payment-picker"')                #Boton para agregar medio de pago
     add_cc_button = (By.XPATH, '//*[@id="root"]/div/div[2]/div[2]/div[1]/div[2]/div[3]/div[3]/div')                 #Boton signo "+" para agregar tarjeta como medio de pago
     add_cc_number = (By.ID, "number")                                                                               #Casilla para agregar tarjeta en ventana emergente
     add_code_input_box = (By.XPATH, "(//input[@id='code'])[2]")                                                     #Casilla para agregar código de tarjeta de credito

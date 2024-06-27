@@ -73,6 +73,9 @@ class UrbanRoutesPage:
     def code_confirm_button(self):                                               # Dar click en Boton confirmar SMS en ventana emergente
         self.driver.find_element(*locators.confirm_button_sms).click()
 
+    def payment_method_selector(self):
+        self.driver.find_element(*locators.payment_method_box).click()
+
     def add_payment_method_box(self):                                            # Dar click en casilla para agregar metodo de pago - tarjeta de credito
         self.driver.find_element(locators.payment_method_box).click()
 

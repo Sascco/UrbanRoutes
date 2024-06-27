@@ -67,6 +67,7 @@ class TestUrbanRoutes:
         set_route.set_to(data.ADDRESS_TO)
         set_route.click_book_a_taxi_button()
         sleep(2)
+        set_route.payment_method_selector()
         set_route.add_new_credit_card()
         sleep(2)
         set_route.add_credit_card_number()
