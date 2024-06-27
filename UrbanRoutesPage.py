@@ -79,17 +79,17 @@ class UrbanRoutesPage:
     def add_payment_method_box(self):                                            # Dar click en casilla para agregar metodo de pago - tarjeta de credito
         self.driver.find_element(locators.payment_method_box).click()
 
-    def add_new_credit_card(self):                                               # Dar click en boton '+' en la ventana para agregar nueva tarjeta de credito
+    def click_on_add_new_cc(self):                                               # Dar click en boton '+' en la ventana para agregar nueva tarjeta de credito
         self.driver.find_element(*locators.add_cc_button).click()
 
-    def cc_number_field(self):                                                   # Dar click en casilla para agregar numero de tarjeta de credito
-        self.driver.find_element(*locators.add_cc_number).click()
+    def cc_input_number(self):                                                   # Dar click en casilla para agregar numero de tarjeta de credito
+        self.driver.find_element(*locators.click_cc_input_number).click()
 
     def add_credit_card_number(self):                                            # Se importa numero de tarjeta de credito como medio de pago desde data.py
-        self.driver.find_element(*locators.add_cc_number).send_keys(data.card_number)
+        self.driver.find_element(*locators.add_cc_number).send_keys(data.CARD_NUMBER)
 
     def cc_code_field(self):                                                     # se diligencia codigo de tarjeta de credito desde data.py
-        self.driver.find_element(*locators.add_code_input_box).send_keys(data.card_code)
+        self.driver.find_element(*locators.add_code_input_box).send_keys(data.CARD_CODE)
 
     def exit_payment_popup(self):                                               # Dar click en boton (X) de la ventana emergente para vincular tarjeta como medio de pago
         self.driver.find_element(*locators.exit_payment_popup_window).click()

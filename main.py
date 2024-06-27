@@ -59,7 +59,7 @@ class TestUrbanRoutes:
     #     set_route.code_confirm_button()
     #     sleep(2)
 
-    #
+    #prueba 5 ingresar información de tarjeta de credito
     def test_add_payment_method(self):  # Agregar tarjeta de credito como metodo de pago
         self.driver.get(data.URBAN_ROUTES_URL)
         set_route = UrbanRoutesPage(self.driver)
@@ -68,7 +68,8 @@ class TestUrbanRoutes:
         set_route.click_book_a_taxi_button()
         sleep(2)
         set_route.payment_method_selector()
-        set_route.add_new_credit_card()
+        sleep(2)
+        set_route.click_on_add_new_cc()
         sleep(2)
         set_route.add_credit_card_number()
         sleep(2)
