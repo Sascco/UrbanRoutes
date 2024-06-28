@@ -73,38 +73,41 @@ class TestUrbanRoutes:
     #     set_route.exit_payment_popup()
 
     #prueba 5 PASSED   Escribir un mensaje para el controlador.
-    def test_special_instruction_for_service(self): # Mensaje para conductor
-        self.driver.get(data.URBAN_ROUTES_URL)
-        set_route = UrbanRoutesPage(self.driver)
-        set_route.set_from(data.ADDRESS_FROM)
-        set_route.set_to(data.ADDRESS_TO)
-        set_route.click_book_a_taxi_button()
-        set_route.comfort_fare_button()
-        sleep(1)
-        set_route.click_message_box_input()
-
-    # prueba 6 - pedir manta y pañuelos
-    def test_ordering_blanket(self):
-        self.driver.get(data.URBAN_ROUTES_URL)
-        set_route = UrbanRoutesPage(self.driver)
-        set_route.set_from(data.ADDRESS_FROM)
-        set_route.set_to(data.ADDRESS_TO)
-        set_route.click_book_a_taxi_button()
-        set_route.comfort_fare_button()
-        set_route.blanket_and_scarves()
-
-    # def test_add_icecream(self): # Pedir 2 helados.
+    # def test_special_instruction_for_service(self): # Mensaje para conductor
     #     self.driver.get(data.URBAN_ROUTES_URL)
     #     set_route = UrbanRoutesPage(self.driver)
     #     set_route.set_from(data.ADDRESS_FROM)
     #     set_route.set_to(data.ADDRESS_TO)
     #     set_route.click_book_a_taxi_button()
-    #     sleep(3)
+    #     set_route.comfort_fare_button()
+    #     sleep(1)
+    #     set_route.click_message_box_input()
+
+    # prueba 6 PASSED- pedir manta y pañuelos
+    # def test_ordering_blanket(self):
+    #     self.driver.get(data.URBAN_ROUTES_URL)
     #     set_route = UrbanRoutesPage(self.driver)
-    #     ice_cream_to_order = 2
-    #     set_route.click_add_ice_cream_button()
-    #     #assert self.driver.find_element(*set_route.ice_cream_counter).text == str(ice_cream_to_order)
-    #
+    #     set_route.set_from(data.ADDRESS_FROM)
+    #     set_route.set_to(data.ADDRESS_TO)
+    #     set_route.click_book_a_taxi_button()
+    #     set_route.comfort_fare_button()
+    #     set_route.blanket_and_scarves()
+
+    # prueba 7 PASSED # Pedir 2 helados.
+    def test_add_icecream(self):
+        self.driver.get(data.URBAN_ROUTES_URL)
+        set_route = UrbanRoutesPage(self.driver)
+        set_route.set_from(data.ADDRESS_FROM)
+        set_route.set_to(data.ADDRESS_TO)
+        set_route.click_book_a_taxi_button()
+        sleep(2) #INCLUIR IMPLICIT WAIT
+        set_route.comfort_fare_button()
+        set_route.order_requirements()
+        set_route.click_add_ice_cream_button()
+        set_route.click_add_ice_cream_button()
+
+        #assert self.driver.find_element(*set_route.ice_cream_counter).text == str(ice_cream_to_order)
+
     #
     #
     # def test_waiting_for_taxi_modal(self): # aparece modal para pedir taxi

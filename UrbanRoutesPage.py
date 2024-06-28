@@ -100,7 +100,10 @@ class UrbanRoutesPage:
     def blanket_and_scarves(self):                                              # Dar click en checkbox para seleccionar manta y pañuelos como pedido especial para el servicio
         self.driver.find_element(*locators.blanket_and_scarves_request).click()
 
+    def order_requirements(self):
+        self.driver.find_element(*locators.order_requirements_menu).click()
     def click_add_ice_cream_button(self):
-        self.driver.find_element(*locators.ice_cream_counter).click()
+        self.driver.find_element(*locators.add_ice_cream_button).click()
+
 
 

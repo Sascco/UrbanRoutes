@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68f574cb-175f-4963-aac7-54223c6da432" name="Changes" comment="Test 1,2 Passed&#10;&#10;la prueba 5, inicia el proceso para ingresar numero de tarjeta y codigo de tarjeta, hace falta cerrar la ventana emergente">
+    <list default="true" id="68f574cb-175f-4963-aac7-54223c6da432" name="Changes" comment="Test 1,2,4,5,6 Passed&#10;&#10;revisando 7...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Home.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UrbanRoutesPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanRoutesPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators.py" afterDir="false" />
@@ -208,7 +207,31 @@
       <option name="project" value="LOCAL" />
       <updated>1719484945161</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Test 1,2,4 Passed&#10;&#10;La prueba 5 no reconoce el localizador para dar click en la casilla para el mensaje para el conductor, por lo tanto no hes posible llamar al mensaje (DATA)">
+      <option name="closed" value="true" />
+      <created>1719570223854</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1719570223854</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Test 1,2,4,5 Passed&#10;&#10;La prueba 6 no reconoce el localizador para dar click en los requisitos del pedido (Manta y pañuelos)">
+      <option name="closed" value="true" />
+      <created>1719571335510</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1719571335510</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Test 1,2,4,5,6 Passed&#10;&#10;revisando 7...">
+      <option name="closed" value="true" />
+      <created>1719571775196</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1719571775196</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,6 +260,9 @@
     <MESSAGE value="Test 1,2 Passed 100 % 6:13 PM&#10;Nombres de variables en cap letters" />
     <MESSAGE value="Test 1,2 Passed&#10;&#10;Se actualizaron las variables en CAPS=constantes en los tests." />
     <MESSAGE value="Test 1,2 Passed&#10;&#10;la prueba 5, inicia el proceso para ingresar numero de tarjeta y codigo de tarjeta, hace falta cerrar la ventana emergente" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test 1,2 Passed&#10;&#10;la prueba 5, inicia el proceso para ingresar numero de tarjeta y codigo de tarjeta, hace falta cerrar la ventana emergente" />
+    <MESSAGE value="Test 1,2,4 Passed&#10;&#10;La prueba 5 no reconoce el localizador para dar click en la casilla para el mensaje para el conductor, por lo tanto no hes posible llamar al mensaje (DATA)" />
+    <MESSAGE value="Test 1,2,4,5 Passed&#10;&#10;La prueba 6 no reconoce el localizador para dar click en los requisitos del pedido (Manta y pañuelos)" />
+    <MESSAGE value="Test 1,2,4,5,6 Passed&#10;&#10;revisando 7..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Test 1,2,4,5,6 Passed&#10;&#10;revisando 7..." />
   </component>
 </project>
