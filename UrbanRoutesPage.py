@@ -98,7 +98,8 @@ class UrbanRoutesPage:
         self.driver.find_element(locators.click_message_box).click()
 
     def message_to_driver_field(self):                                          # Casilla para ingresar mensaje para el conductor, se importa desde data.py
-        self.driver.find_element(*locators.special_request_for_driver).send_keys(data.message_for_driver)
+        self.driver.find_element(locators.click_message_box).send_keys(data.MESSAGE_FOR_DRIVER)
+
 
     def blanket_and_scarves(self):                                              # Dar click en checkbox para seleccionar manta y pañuelos como pedido especial para el servicio
         self.driver.find_element(*locators.blanket_and_scarves_request).click()

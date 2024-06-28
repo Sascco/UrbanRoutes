@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="68f574cb-175f-4963-aac7-54223c6da432" name="Changes" comment="Test 1,2 Passed&#10;&#10;la prueba 5, inicia el proceso para ingresar numero de tarjeta y codigo de tarjeta, hace falta cerrar la ventana emergente">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrbanRoutesPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanRoutesPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
