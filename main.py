@@ -83,15 +83,14 @@ class TestUrbanRoutes:
         sleep(1)
         set_route.click_message_box_input()
 
-    # prueba - pedir manta y pañuelos
-    def test_ordering_blanket(self): #Pedir una manta y pañuelos.
+    # prueba 6 - pedir manta y pañuelos
+    def test_ordering_blanket(self):
         self.driver.get(data.URBAN_ROUTES_URL)
         set_route = UrbanRoutesPage(self.driver)
         set_route.set_from(data.ADDRESS_FROM)
         set_route.set_to(data.ADDRESS_TO)
         set_route.click_book_a_taxi_button()
         set_route.comfort_fare_button()
-        sleep(1)
         set_route.blanket_and_scarves()
 
     # def test_add_icecream(self): # Pedir 2 helados.
