@@ -25,14 +25,14 @@ class TestUrbanRoutes:
         cls.driver.implicitly_wait(10)
 
     #prueba 1 - PASSED - Configurar la dirección (esta parte se ha escrito para ti como ejemplo).
-    # def test_set_route(self):
-    #     self.driver.get(data.URBAN_ROUTES_URL)
-    #     set_route = UrbanRoutesPage(self.driver)
-    #     set_route.set_from(data.ADDRESS_FROM)
-    #     set_route.set_to(data.ADDRESS_TO)
-    #     from_1 = set_route.get_from()
-    #     assert from_1 == data.ADDRESS_FROM
-    #     set_route.click_book_a_taxi_button()
+    def test_set_route(self):
+        self.driver.get(data.URBAN_ROUTES_URL)
+        set_route = UrbanRoutesPage(self.driver)
+        set_route.set_from(data.ADDRESS_FROM)
+        set_route.set_to(data.ADDRESS_TO)
+        from_1 = set_route.get_from()
+        assert from_1 == data.ADDRESS_FROM
+        set_route.click_book_a_taxi_button()
 
 
     #prueba 2  PASSED
@@ -46,17 +46,17 @@ class TestUrbanRoutes:
         # assert set_route.comfort_fare_button()    Fix this assert!!!!
 
     # prueba 3
-    # def test_fill_phone_number_box(self):  # Rellenar el número de teléfono.
-    #     self.driver.get(data.URBAN_ROUTES_URL)
-    #     set_route = UrbanRoutesPage(self.driver)
-    #     set_route.set_from(data.ADDRESS_FROM)
-    #     set_route.set_to(data.ADDRESS_TO)
-    #     set_route.click_book_a_taxi_button()
-    #     set_route.phone_popup_window_input_box(data.phone_number)
-    #     set_route.phone_popup_window_input_box_next()
-    #     set_route.code_field()
-    #     set_route.code_confirm_button()
-    #     sleep(2)
+    def test_fill_phone_number_box(self):  # Rellenar el número de teléfono.
+        self.driver.get(data.URBAN_ROUTES_URL)
+        set_route = UrbanRoutesPage(self.driver)
+        set_route.set_from(data.ADDRESS_FROM)
+        set_route.set_to(data.ADDRESS_TO)
+        set_route.click_book_a_taxi_button()
+        set_route.set_phone_input_box()
+        set_route.phone_popup_window_input_box_next()
+        set_route.code_field()
+        set_route.code_confirm_button()
+        sleep(2)
 
     #prueba 4 PASSED ingresar información de tarjeta de credito
     # def test_add_payment_method(self):  # Agregar tarjeta de credito como metodo de pago
@@ -94,18 +94,18 @@ class TestUrbanRoutes:
     #     set_route.blanket_and_scarves()
 
     # prueba 7 PASSED # Pedir 2 helados.
-    def test_add_icecream(self):
-        self.driver.get(data.URBAN_ROUTES_URL)
-        set_route = UrbanRoutesPage(self.driver)
-        set_route.set_from(data.ADDRESS_FROM)
-        set_route.set_to(data.ADDRESS_TO)
-        set_route.click_book_a_taxi_button()
-        sleep(2) #INCLUIR IMPLICIT WAIT
-        set_route.comfort_fare_button()
-        set_route.order_requirements()
-        set_route.click_add_ice_cream_button()
-        set_route.click_add_ice_cream_button()
-        #assert self.driver.find_element(*set_route.ice_cream_counter).text == str(ice_cream_to_order)
+    # def test_add_icecream(self):
+    #     self.driver.get(data.URBAN_ROUTES_URL)
+    #     set_route = UrbanRoutesPage(self.driver)
+    #     set_route.set_from(data.ADDRESS_FROM)
+    #     set_route.set_to(data.ADDRESS_TO)
+    #     set_route.click_book_a_taxi_button()
+    #     sleep(2) #INCLUIR IMPLICIT WAIT
+    #     set_route.comfort_fare_button()
+    #     set_route.order_requirements()
+    #     set_route.click_add_ice_cream_button()
+    #     set_route.click_add_ice_cream_button()
+    #     #assert self.driver.find_element(*set_route.ice_cream_counter).text == str(ice_cream_to_order)
 
     #
     #
