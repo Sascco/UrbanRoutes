@@ -105,7 +105,6 @@ class TestUrbanRoutes:
         set_route.order_requirements()
         set_route.click_add_ice_cream_button()
         set_route.click_add_ice_cream_button()
-
         #assert self.driver.find_element(*set_route.ice_cream_counter).text == str(ice_cream_to_order)
 
     #
