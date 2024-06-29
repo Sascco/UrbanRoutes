@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68f574cb-175f-4963-aac7-54223c6da432" name="Changes" comment="Test 1,2,4,5,6,7 Passed&#10;Incluir implicit wait como metodo para incluirlo como paso en cada prueba&#10;revisando 3... Metodo phone_popup_window_input_box">
+    <list default="true" id="68f574cb-175f-4963-aac7-54223c6da432" name="Changes" comment="Test 1,2,3,4,5,6,7 Passed&#10;&#10;Se eliminan Metodos sin utilizar, se agregaron comentarios a los test y a los metodos.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrbanRoutesPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanRoutesPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -280,7 +277,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719622457385</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Test 1,2,3,4,5,6,7 Passed&#10;&#10;Se eliminaron imports sin utilizar, las pruebas siguen funcionando.">
+      <option name="closed" value="true" />
+      <created>1719662404123</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1719662404123</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Test 1,2,3,4,5,6,7 Passed&#10;&#10;Se eliminan Metodos sin utilizar, se agregaron comentarios a los test y a los metodos.">
+      <option name="closed" value="true" />
+      <created>1719665635739</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1719665635739</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -315,6 +328,8 @@
     <MESSAGE value="Test 1,2,4,5,6,7 Passed&#10;&#10;revisando 3..." />
     <MESSAGE value="Test 1,2,4,5,6,7 Passed&#10;Incluir implicit wait como metodo para incluirlo como paso en cada prueba&#10;revisando 3..." />
     <MESSAGE value="Test 1,2,4,5,6,7 Passed&#10;Incluir implicit wait como metodo para incluirlo como paso en cada prueba&#10;revisando 3... Metodo phone_popup_window_input_box" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test 1,2,4,5,6,7 Passed&#10;Incluir implicit wait como metodo para incluirlo como paso en cada prueba&#10;revisando 3... Metodo phone_popup_window_input_box" />
+    <MESSAGE value="Test 1,2,3,4,5,6,7 Passed&#10;&#10;Se eliminaron imports sin utilizar, las pruebas siguen funcionando." />
+    <MESSAGE value="Test 1,2,3,4,5,6,7 Passed&#10;&#10;Se eliminan Metodos sin utilizar, se agregaron comentarios a los test y a los metodos." />
+    <option name="LAST_COMMIT_MESSAGE" value="Test 1,2,3,4,5,6,7 Passed&#10;&#10;Se eliminan Metodos sin utilizar, se agregaron comentarios a los test y a los metodos." />
   </component>
 </project>
