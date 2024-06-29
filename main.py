@@ -1,15 +1,7 @@
 import data
-from locators import locators
 from UrbanRoutesPage import UrbanRoutesPage
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.support.wait import WebDriverWait
 from time import sleep
-
-
-#start
 
 class TestUrbanRoutes:
     driver = None

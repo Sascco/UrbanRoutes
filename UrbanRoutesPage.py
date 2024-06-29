@@ -1,9 +1,6 @@
 import data
 import locators
 from locators import locators
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-
 
 # no modificar
 def retrieve_phone_code(driver) -> str:
