@@ -16,7 +16,7 @@ class TestUrbanRoutes:
         cls.driver.get(data.URBAN_ROUTES_URL)
         cls.driver.implicitly_wait(10)
 
-    #prueba 1 - PASSED - Configurar la dirección (esta parte se ha escrito para ti como ejemplo).
+    #prueba 1 - Configurar la dirección (esta parte se ha escrito para ti como ejemplo).
     def test_set_route(self):
         self.driver.get(data.URBAN_ROUTES_URL)
         set_route = UrbanRoutesPage(self.driver)
@@ -27,7 +27,7 @@ class TestUrbanRoutes:
         set_route.click_book_a_taxi_button()
 
 
-    #prueba 2  PASSED
+    #prueba 2  Seleccionar la tarifa Comfort.
     def test_comfort_fare(self):
         self.driver.get(data.URBAN_ROUTES_URL)
         set_route = UrbanRoutesPage(self.driver)
@@ -37,7 +37,7 @@ class TestUrbanRoutes:
         set_route.comfort_fare_button()
         # assert set_route.comfort_fare_button()    Fix this assert!!!!
 
-    # prueba 3
+    # prueba 3 - Rellenar el número de teléfono.
     def test_fill_phone_number_box(self):  # Rellenar el número de teléfono.
         self.driver.get(data.URBAN_ROUTES_URL)
         set_route = UrbanRoutesPage(self.driver)
@@ -52,10 +52,10 @@ class TestUrbanRoutes:
         set_route.phone_popup_next()
         set_route.sms_code_inputbox()
         sleep(2)
-        # set_route.code_confirm_button()
+        set_route.code_confirm_button()
         # sleep(2)
 
-    #prueba 4 PASSED ingresar información de tarjeta de credito
+    #prueba 4 Agregar una tarjeta de crédito.
     def test_add_payment_method(self):  # Agregar tarjeta de credito como metodo de pago
         self.driver.get(data.URBAN_ROUTES_URL)
         set_route = UrbanRoutesPage(self.driver)
@@ -69,7 +69,7 @@ class TestUrbanRoutes:
         set_route.cc_code_field()
         set_route.exit_payment_popup()
 
-    #prueba 5 PASSED   Escribir un mensaje para el controlador.
+    #prueba 5 Escribir un mensaje para el controlador.
     def test_special_instruction_for_service(self): # Mensaje para conductor
         self.driver.get(data.URBAN_ROUTES_URL)
         set_route = UrbanRoutesPage(self.driver)
@@ -80,7 +80,7 @@ class TestUrbanRoutes:
         sleep(1)
         set_route.click_message_box_input()
 
-    # prueba 6 PASSED- pedir manta y pañuelos
+    # prueba 6 Pedir una manta y pañuelos.
     def test_ordering_blanket(self):
         self.driver.get(data.URBAN_ROUTES_URL)
         set_route = UrbanRoutesPage(self.driver)
@@ -90,7 +90,7 @@ class TestUrbanRoutes:
         set_route.comfort_fare_button()
         set_route.blanket_and_scarves()
 
-    # prueba 7 PASSED # Pedir 2 helados.
+    # prueba 7 Pedir 2 helados.
     def test_add_icecream(self):
         self.driver.get(data.URBAN_ROUTES_URL)
         set_route = UrbanRoutesPage(self.driver)
@@ -102,7 +102,7 @@ class TestUrbanRoutes:
         set_route.order_requirements()
         set_route.click_add_ice_cream_button()
         set_route.click_add_ice_cream_button()
-    #     #assert self.driver.find_element(*set_route.ice_cream_counter).text == str(ice_cream_to_order)
+        #assert self.driver.find_element(*set_route.ice_cream_button).text == str(ice_cream_to_order)
 
     #
     #

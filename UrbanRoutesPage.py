@@ -41,7 +41,7 @@ class UrbanRoutesPage:
     def set_to(self, to_address):                                               # Casilla para ingrear dirección de destino
         self.driver.find_element(*locators.to_field).send_keys(to_address)
 
-    def get_from(self):
+    def get_from(self):                                                         # Metodo para confirmar que se usa la dirección de origen correcta
         return self.driver.find_element(*locators.from_field).get_property('value')
 
     def get_to(self):
@@ -56,52 +56,43 @@ class UrbanRoutesPage:
     def set_phone_input_box(self):                                               # Hace click en casilla Numero de telefono en menu de pedido
         self.driver.find_element(*locators.phone_input_box).click()
 
-    def phone_popup_input_box(self):                                      # Ingresar número de telefono en ventana emergente
+    def phone_popup_input_box(self):                                            # Ingresar número de telefono en ventana emergente
         self.driver.find_element(*locators.add_phone_input_box).send_keys(data.PHONE_NUMBER)
 
-    def phone_popup_next(self):                                 # Dar click en Siguiente para con el registro del  numero de telefono
+    def phone_popup_next(self):                                                 # Dar click en Siguiente para con el registro del  numero de telefono
         self.driver.find_element(*locators.next_button_phone_popup_window ).click()
 
-    def sms_code_inputbox(self):  # Código SMS
-        code_sms = retrieve_phone_code(driver=self.driver)                                           # Dar click en casilla para ingresar SMS con funcion pre establecida y completar el registro del numero de teleno
-        print(code_sms)                    ##############esta funcion no genera el SMS terminar el proceso ---- revisar #######################
+    def sms_code_inputbox(self):                                                # Código SMS generado en la función retrieve_phone_code en este mismo archivo
+        code_sms = retrieve_phone_code(driver=self.driver)                      # Dar click en casilla para ingresar SMS con funcion pre establecida y completar el registro del numero de teleno
+        print(code_sms)
         self.driver.find_element(*locators.add_sms_code).send_keys(code_sms)
 
-    def code_confirm_button(self):                                               # Dar click en Boton confirmar SMS en ventana emergente
+    def code_confirm_button(self):                                              # Hace click en el boton CONFIRMAR despues de generar el codigo via SMS
         self.driver.find_element(*locators.confirm_button_sms).click()
 
-    def payment_method_selector(self):
+    def payment_method_selector(self):                                          # Hace click en la casilla Metodo de pago
         self.driver.find_element(*locators.payment_method_box).click()
-
-    def add_payment_method_box(self):                                            # Dar click en casilla para agregar metodo de pago - tarjeta de credito
-        self.driver.find_element(locators.payment_method_box).click()
 
     def click_on_add_new_cc(self):                                               # Dar click en boton '+' en la ventana para agregar nueva tarjeta de credito
         self.driver.find_element(*locators.add_cc_button).click()
 
-    def cc_input_number(self):                                                   # Dar click en casilla para agregar numero de tarjeta de credito
-        self.driver.find_element(*locators.click_cc_input_number).click()
-
     def add_credit_card_number(self):                                            # Se importa numero de tarjeta de credito como medio de pago desde data.py
         self.driver.find_element(*locators.add_cc_number).send_keys(data.CARD_NUMBER)
 
-
-    def cc_code_field(self):                                                     # se diligencia codigo de tarjeta de credito desde data.py
+    def cc_code_field(self):                                                    # se diligencia codigo de tarjeta de credito desde data.py
         self.driver.find_element(*locators.add_code_input_box).send_keys(data.CARD_CODE)
 
     def exit_payment_popup(self):                                               # Dar click en boton (X) de la ventana emergente para vincular tarjeta como medio de pago
         self.driver.find_element(*locators.exit_payment_popup_window).click()
 
-    def click_message_box_input(self):
+    def click_message_box_input(self):                                          # Hace click en casilla para enviar mensaje al conductor
         self.driver.find_element(*locators.click_message_box).send_keys(data.MESSAGE_FOR_DRIVER)
 
     def blanket_and_scarves(self):                                              # Dar click en checkbox para seleccionar manta y pañuelos como pedido especial para el servicio
         self.driver.find_element(*locators.blanket_and_scarves_request).click()
 
-    def order_requirements(self):
+    def order_requirements(self):                                               # Hace click en Menu desplegable "Requisitos del Pedido"
         self.driver.find_element(*locators.order_requirements_menu).click()
-    def click_add_ice_cream_button(self):
+
+    def click_add_ice_cream_button(self):                                       # Hace click en (+) para aumentar en 1 la cantidad de Helado una vez el menú se despliega
         self.driver.find_element(*locators.add_ice_cream_button).click()
-
-
-
