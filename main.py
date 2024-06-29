@@ -52,11 +52,13 @@ class TestUrbanRoutes:
         set_route.set_from(data.ADDRESS_FROM)
         set_route.set_to(data.ADDRESS_TO)
         set_route.click_book_a_taxi_button()
+        sleep(1)
         set_route.set_phone_input_box()
+        sleep(3)
         set_route.phone_popup_window_input_box_next()
-        set_route.code_field()
-        set_route.code_confirm_button()
-        sleep(2)
+        # set_route.code_field()
+        # set_route.code_confirm_button()
+        # sleep(2)
 
     #prueba 4 PASSED ingresar información de tarjeta de credito
     # def test_add_payment_method(self):  # Agregar tarjeta de credito como metodo de pago

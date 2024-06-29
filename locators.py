@@ -7,7 +7,7 @@ class locators:                                                                 
     to_field = (By.ID, 'to')                                                                                        #Casilla para ingrear direccion de destino
     book_a_taxi_button = (By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[1]/div[3]/div[1]/button')                #Boton para pedir taxi
     comfort_fare = (By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[1]/div[5]/div[1]/img')                  #Icono para seleccionar la tarifa comfort
-    phone_input_box = (By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[1]/div')                      #Casilla para ingresar telefono en menu inicial
+    phone_input_box = (By.XPATH, "//div[text()='Número de teléfono']")                      #Casilla para ingresar telefono en menu inicial
     add_phone_input_box = (By.ID, "phone")                                                                          #Casilla para ingresar No. de Telefono en ventana emergente
     next_button_phone_popup_window = (By.XPATH, '//*[@id="root"]/div/div[1]/div[2]/div[1]/form/div[2]/button')      #Boton Siguiente en ventana emergente para ingresar telefono
     add_SMS_input_box = (By. XPATH, '//*[@id="code"]')                                                              #Casilla para ingrear el codigo SMS despues de ingresar telefono

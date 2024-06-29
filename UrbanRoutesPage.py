@@ -60,7 +60,7 @@ class UrbanRoutesPage:
         self.driver.find_element(*locators.phone_input_box).click()
 
     def phone_popup_window_input_box(self):                                      # Ingresar número de telefono en ventana emergente
-        self.driver.find_element(*locators.add_phone_input_box).send_keys(data.phone_number)
+        self.driver.find_element(*locators.add_phone_input_box).send_keys(data.PHONE_NUMBER)
 
     def phone_popup_window_input_box_next(self):                                 # Dar click en Siguiente para con el registro del  numero de telefono
         self.driver.find_element(*locators.phone_popup_window_input_box_next ).click()
