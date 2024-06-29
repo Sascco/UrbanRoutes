@@ -59,14 +59,14 @@ class UrbanRoutesPage:
     def set_phone_input_box(self):                                               # Hace click en casilla Numero de telefono en menu de pedido
         self.driver.find_element(*locators.phone_input_box).click()
 
-    def phone_popup_window_input_box(self):                                      # Ingresar número de telefono en ventana emergente
+    def phone_popup_input_box(self):                                      # Ingresar número de telefono en ventana emergente
         self.driver.find_element(*locators.add_phone_input_box).send_keys(data.PHONE_NUMBER)
 
-    def phone_popup_window_input_box_next(self):                                 # Dar click en Siguiente para con el registro del  numero de telefono
-        self.driver.find_element(*locators.phone_popup_window_input_box_next ).click()
+    def phone_popup_next(self):                                 # Dar click en Siguiente para con el registro del  numero de telefono
+        self.driver.find_element(*locators.next_button_phone_popup_window ).click()
 
     def sms_code_inputbox(self):  # Código SMS
-        code_sms = retrieve_phone_code                                           # Dar click en casilla para ingresar SMS con funcion pre establecida y completar el registro del numero de teleno
+        code_sms = retrieve_phone_code(driver=self.driver)                                           # Dar click en casilla para ingresar SMS con funcion pre establecida y completar el registro del numero de teleno
         print(code_sms)                    ##############esta funcion no genera el SMS terminar el proceso ---- revisar #######################
         self.driver.find_element(*locators.add_sms_code).send_keys(code_sms)
 
@@ -87,6 +87,7 @@ class UrbanRoutesPage:
 
     def add_credit_card_number(self):                                            # Se importa numero de tarjeta de credito como medio de pago desde data.py
         self.driver.find_element(*locators.add_cc_number).send_keys(data.CARD_NUMBER)
+
 
     def cc_code_field(self):                                                     # se diligencia codigo de tarjeta de credito desde data.py
         self.driver.find_element(*locators.add_code_input_box).send_keys(data.CARD_CODE)
