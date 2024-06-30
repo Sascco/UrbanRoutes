@@ -133,7 +133,7 @@ pip install pytest
 
 # Ejecutar las pruebas con pytest
 pytest test_example.py
-
+```
 
 # Como iniciar las pruebas...
 
