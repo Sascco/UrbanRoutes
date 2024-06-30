@@ -96,3 +96,6 @@ class UrbanRoutesPage:
 
     def click_add_ice_cream_button(self):                                       # Hace click en (+) para aumentar en 1 la cantidad de Helado una vez el menú se despliega
         self.driver.find_element(*locators.add_ice_cream_button).click()
+
+    def click_order_taxi(self):
+        self.driver.find_element(*locators.book_order_button).click()           # Hace click en boton de reservar taxi una vez se completan los requisitos

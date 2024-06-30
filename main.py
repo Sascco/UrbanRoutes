@@ -3,6 +3,7 @@ from UrbanRoutesPage import UrbanRoutesPage
 from selenium import webdriver
 from time import sleep
 
+
 class TestUrbanRoutes:
     driver = None
 
@@ -26,7 +27,6 @@ class TestUrbanRoutes:
         assert from_1 == data.ADDRESS_FROM
         set_route.click_book_a_taxi_button()
 
-
     #prueba 2  Seleccionar la tarifa Comfort.
     def test_comfort_fare(self):
         self.driver.get(data.URBAN_ROUTES_URL)
@@ -44,16 +44,11 @@ class TestUrbanRoutes:
         set_route.set_from(data.ADDRESS_FROM)
         set_route.set_to(data.ADDRESS_TO)
         set_route.click_book_a_taxi_button()
-        sleep(1)
         set_route.set_phone_input_box()
-        sleep(3)
         set_route.phone_popup_input_box()
-        sleep(2)
         set_route.phone_popup_next()
         set_route.sms_code_inputbox()
-        sleep(2)
         set_route.code_confirm_button()
-        # sleep(2)
 
     #prueba 4 Agregar una tarjeta de crédito.
     def test_add_payment_method(self):  # Agregar tarjeta de credito como metodo de pago
@@ -62,7 +57,6 @@ class TestUrbanRoutes:
         set_route.set_from(data.ADDRESS_FROM)
         set_route.set_to(data.ADDRESS_TO)
         set_route.click_book_a_taxi_button()
-        sleep(1)
         set_route.payment_method_selector()
         set_route.click_on_add_new_cc()
         set_route.add_credit_card_number()
@@ -70,7 +64,7 @@ class TestUrbanRoutes:
         set_route.exit_payment_popup()
 
     #prueba 5 Escribir un mensaje para el controlador.
-    def test_special_instruction_for_service(self): # Mensaje para conductor
+    def test_special_instruction_for_service(self):
         self.driver.get(data.URBAN_ROUTES_URL)
         set_route = UrbanRoutesPage(self.driver)
         set_route.set_from(data.ADDRESS_FROM)
@@ -90,28 +84,34 @@ class TestUrbanRoutes:
         set_route.comfort_fare_button()
         set_route.blanket_and_scarves()
 
-    # prueba 7 Pedir 2 helados.
+    # # prueba 7 Pedir 2 helados.
     def test_add_icecream(self):
         self.driver.get(data.URBAN_ROUTES_URL)
         set_route = UrbanRoutesPage(self.driver)
         set_route.set_from(data.ADDRESS_FROM)
         set_route.set_to(data.ADDRESS_TO)
         set_route.click_book_a_taxi_button()
-        sleep(2) #INCLUIR IMPLICIT WAIT
+        #sleep(1)
         set_route.comfort_fare_button()
         set_route.order_requirements()
         set_route.click_add_ice_cream_button()
         set_route.click_add_ice_cream_button()
-        #assert self.driver.find_element(*set_route.ice_cream_button).text == str(ice_cream_to_order)
 
-    #
-    #
-    # def test_waiting_for_taxi_modal(self): # aparece modal para pedir taxi
-    #     test_set_location = UrbanRoutesPage(self.driver)
-    #     self.initial_header = test_set_location.get_waiting_popup_header()
-    #     test_set_location.click_order_taxi_button()
-    #     assert self.driver.find_element(*test_set_location.waiting_popup_header).text == 'Buscar automóvil'
+    def test_waiting_for_taxi_modal(self):                                 # aparece modal para pedir taxi
+        self.driver.get(data.URBAN_ROUTES_URL)
+        set_route = UrbanRoutesPage(self.driver)
+        set_route.set_from(data.ADDRESS_FROM)
+        set_route.set_to(data.ADDRESS_TO)
+        set_route.click_book_a_taxi_button()
+        set_route.comfort_fare_button()
+        set_route.set_phone_input_box()
+        set_route.phone_popup_input_box()
+        set_route.phone_popup_next()
+        set_route.sms_code_inputbox()
+        set_route.code_confirm_button()
+        set_route.click_order_taxi()
+        sleep(10)
 
-@classmethod
-def teardown_class(cls):
-    cls.driver.quit()
+    @classmethod
+    def teardown_class(cls):
+        cls.driver.quit()
