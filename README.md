@@ -30,95 +30,116 @@ Las acciones comunes se pueden reutilizar en múltiples pruebas, lo que reduce l
 
 Las clases de prueba son más legibles ya que se centran en las acciones y verificaciones en lugar de en los detalles de la implementación de la UI.
 
-## Installation
+# Guía de Instalación Rápida
 
-1. Ensuring PyCharm is Installed
+## Requisitos Previos
 
-Download and install the latest version of PyCharm from the JetBrains website: https://www.jetbrains.com/pycharm/download/
-2. Creating a Virtual Environment (Recommended)
+- Sistema Operativo: Windows, macOS, o Linux
+- Editor: PyCharm (Community o Professional)
 
-In PyCharm, open your project or create a new one.
-Go to ```File``` -> ```Settings (or PyCharm``` -> ```Preferences``` on macOS).
-Navigate to ```Project: <your project name> ```-> ```Python Interpreter.```
-Click the gear icon next to the interpreter dropdown and choose "Add Interpreter".
-Select "Virtualenv Environment".
-Choose a base interpreter (usually the latest Python version available) and specify a location for the virtual environment.
-Check the "Inherit global site-packages" box if you want to use existing packages.
-Click "OK" to create the virtual environment.
+## Paso 1: Instalar Python 3
 
-3. Installing Pip (Usually Pre-Installed)
+1. **Descargar Python:**
+   - Visita [python.org](https://www.python.org/downloads/) y descarga la última versión de Python 3 para tu sistema operativo.
 
-Pip is the package installer for Python and typically comes pre-installed with Python.
+2. **Instalar Python:**
+   - Ejecuta el instalador y asegúrate de seleccionar la opción "Add Python to PATH" antes de continuar con la instalación.
 
-To check if Pip is installed, open PyCharm's terminal and run:
-```
-Bash
-pip --version
-```
+## Paso 2: Instalar PyCharm
 
-content_copy
-If you get a version number, Pip is installed. Otherwise, follow the instructions for your operating system on the official Pip website: https://pip.pypa.io/en/stable/installation/
+1. **Descargar PyCharm:**
+   - Visita [jetbrains.com/pycharm/download](https://www.jetbrains.com/pycharm/download/) y descarga la versión Community (gratuita) o Professional.
 
-4. Installing Pytest and Selenium
+2. **Instalar PyCharm:**
+   - Ejecuta el instalador y sigue las instrucciones en pantalla para completar la instalación.
 
-Pytest:
+## Paso 3: Crear un Nuevo Proyecto en PyCharm
 
-Open the PyCharm terminal.
+1. **Abrir PyCharm:**
+   - Abre PyCharm y selecciona `File` > `New Project`.
 
-Run the following command:
+2. **Configurar el Proyecto:**
+   - Elige una ubicación para tu nuevo proyecto.
+   - Selecciona la versión de Python 3 que instalaste anteriormente como el intérprete del proyecto.
 
-```
-pip install pytest
-```
+## Paso 4: Instalar Pip
 
-Selenium:
+1. **Verificar pip:**
+   - Pip se instala automáticamente con Python 3. Puedes verificar la instalación abriendo el terminal en PyCharm (`View` > `Tool Windows` > `Terminal`) y ejecutando:
+     ```sh
+     pip --version
+     ```
 
-Open the PyCharm terminal.
+## Paso 5: Instalar Selenium, WebDriver Manager y Pytest
 
-Run the following command:
+1. **Abrir el Terminal en PyCharm:**
+   - Ve a `View` > `Tool Windows` > `Terminal`.
+
+2. **Instalar Selenium y WebDriver Manager:**
+   - Ejecuta los siguientes comandos en el terminal:
+     ```sh
+     pip install selenium
+     pip install webdriver-manager
+     ```
+
+3. **Instalar pytest:**
+   - Ejecuta el siguiente comando en el terminal:
+     ```sh
+     pip install pytest
+     ```
+
+## Paso 6: Configurar WebDriver
+
+1. **Añadir Código de Ejemplo:**
+   - Crea un archivo Python (por ejemplo, `test_example.py`) y añade el siguiente código para verificar que todo está configurado correctamente:
+
+     ```python
+     from selenium import webdriver
+     from selenium.webdriver.common.by import By
+     from webdriver_manager.chrome import ChromeDriverManager
+     import pytest
+
+     @pytest.fixture
+     def setup():
+         driver = webdriver.Chrome(ChromeDriverManager().install())
+         driver.implicitly_wait(10)
+         yield driver
+         driver.quit()
+
+     def test_google_search(setup):
+         driver = setup
+         driver.get("https://www.google.com")
+         assert "Google" in driver.title
+     ```
+
+2. **Ejecutar la Prueba:**
+   - Ejecuta el script desde el terminal usando pytest:
+     ```sh
+     pytest test_example.py
+     ```
+
+## Resumen de Comandos
 
 ```sh
+# Verificar la instalación de pip
+pip --version
+
+# Instalar Selenium y WebDriver Manager
 pip install selenium
-```
+pip install webdriver-manager
 
-PyCharm will automatically download and install the packages.
+# Instalar pytest
+pip install pytest
+
+# Ejecutar las pruebas con pytest
+pytest test_example.py
 
 
-5. Verification
-
-You can verify that Pytest and Selenium are installed by trying to import them in your Python code:
-
-Python
-```import pytest
-from selenium import webdriver
-```
-
-If there are no errors, the installation was successful.
-Alternative Installation Method (Using PyCharm's GUI)
-
-Go to File -> Settings (or PyCharm -> Preferences on macOS).
-Navigate to Project: <your project name> -> Python Interpreter.
-Click the "+" button to open the "Available Packages" window.
-Search for "pytest" and "selenium".
-Click "Install Package" for each of them.
-
-Additional Tips
-
-WebDrivers: Selenium requires a browser driver to interact with the browser. Download the appropriate driver (e.g., ChromeDriver for Chrome) and make sure it's in your system's PATH or provide its location explicitly in your code.
-
-Project Structure: Organize your PyCharm project with separate directories for tests, page objects, and other components.
-
-Updates: Keep your packages up-to-date with the following command:
-
-Bash
-```
-pip install --upgrade pytest selenium
-```
 # Como iniciar las pruebas...
 
 Una vez tengas instalado Python, Pytest y Pycharm, vas a poder editar el codigo y ejecutar las pruebas que consideres necesarias ejecutando el archivo main.py.
 
-En el archivo main.py vas a encontrar los localizadores y metodos están en la clase UrbanRoutesPage. Las pruebas están en la clase TestUrbanRoutes
+En el archivo UrbanRoutesPage.py vas a encontrar los metodos, que utilizan los localizadores que se encuentran en el archivo Locators.py. Las pruebas están en la clase TestUrbanRoutes en el archivo Main.py.
 
 
 
