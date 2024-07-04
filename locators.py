@@ -6,6 +6,8 @@ class locators:                                                                 
     to_field = (By.ID, 'to')                                                                                        #Casilla para ingrear direccion de destino
     book_a_taxi_button = (By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[1]/div[3]/div[1]/button')                #Boton para pedir taxi
     comfort_fare = (By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[1]/div[5]/div[1]/img')                  #Icono para seleccionar la tarifa comfort
+    comfort_card_name = (By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[1]/div[5]/div[2]')
+    comfort_fare_selected = (By.XPATH, "//div[@class='tcard active']")
     phone_input_box = (By.XPATH, "//div[text()='Número de teléfono']")                                              #Casilla para ingresar telefono en menu inicial
     add_phone_input_box = (By.ID, "phone")                                                                          #Casilla para ingresar No. de Telefono en ventana emergente
     next_button_phone_popup_window = (By.XPATH, '//*[@id="root"]/div/div[1]/div[2]/div[1]/form/div[2]/button')      #Boton Siguiente en ventana emergente para ingresar telefono
@@ -13,6 +15,7 @@ class locators:                                                                 
     add_sms_code = (By.ID, "code")                                                                                  #Casilla para ingresar SMS y terminar registro telefono
     confirm_button_sms = (By.XPATH, '//*[@id="root"]/div/div[1]/div[2]/div[2]/form/div[2]/button[1]')               #Boton de confirmar el codigo en la ventana para ingresar SMS
     payment_method_box = (By.XPATH, '/html/body/div/div/div[3]/div[3]/div[2]/div[2]/div[2]')                #Boton para agregar medio de pago
+    users_payment_method = (By.CLASS_NAME, "pp-value-text")   #revisar este localizador
     add_cc_button = (By.XPATH, '//*[@id="root"]/div/div[2]/div[2]/div[1]/div[2]/div[3]/div[3]/div')                 #Boton signo "+" para agregar tarjeta como medio de pago
     click_cc_input_number = (By.CLASS_NAME, 'card-number-input')
     add_cc_number = (By.ID, "number")                                                                               #Casilla para agregar tarjeta en ventana emergente

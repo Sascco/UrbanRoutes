@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68f574cb-175f-4963-aac7-54223c6da432" name="Changes" comment="Test 1,2,3,4,5,6,7 Passed&#10;&#10;Se eliminan Metodos sin utilizar, se agregaron comentarios a los test y a los metodos.">
+    <list default="true" id="68f574cb-175f-4963-aac7-54223c6da432" name="Changes" comment="100%">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UrbanRoutesPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanRoutesPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators.py" afterDir="false" />
@@ -23,6 +24,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -32,23 +36,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for main.TestUrbanRoutes.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_fill_phone_number_box.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_set_route.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in main.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Home.executor&quot;: &quot;Run&quot;,
-    &quot;Python.UrbanRoutesPage.executor&quot;: &quot;Run&quot;,
-    &quot;Python.data.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.VCS&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for main.TestUrbanRoutes.executor": "Run",
+    "Python tests.Python tests for main.TestUrbanRoutes.test_add_payment_method.executor": "Run",
+    "Python tests.Python tests for main.TestUrbanRoutes.test_comfort_fare.executor": "Run",
+    "Python tests.Python tests for main.TestUrbanRoutes.test_fill_phone_number_box.executor": "Run",
+    "Python tests.Python tests for main.TestUrbanRoutes.test_set_route.executor": "Run",
+    "Python tests.Python tests for main.TestUrbanRoutes.test_special_instruction_for_service.executor": "Run",
+    "Python tests.Python tests in main.py.executor": "Run",
+    "Python.Home.executor": "Run",
+    "Python.UrbanRoutesPage.executor": "Run",
+    "Python.data.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Sascc/OneDrive/Desktop/QA/proyecto_7_windows",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.VCS"
   }
-}</component>
-  <component name="RunManager" selected="Python tests.Python tests for main.TestUrbanRoutes">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sascc\OneDrive\Desktop\QA\proyecto_7_windows" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for main.TestUrbanRoutes.test_add_payment_method">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="proyecto_7_windows" />
       <option name="ENV_FILES" value="" />
@@ -86,6 +99,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for main.TestUrbanRoutes.test_add_payment_method" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="proyecto_7_windows" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;main.TestUrbanRoutes.test_add_payment_method&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for main.TestUrbanRoutes.test_fill_phone_number_box" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="proyecto_7_windows" />
       <option name="ENV_FILES" value="" />
@@ -116,10 +144,27 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for main.TestUrbanRoutes.test_special_instruction_for_service" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="proyecto_7_windows" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;main.TestUrbanRoutes.test_special_instruction_for_service&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes" />
+        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_add_payment_method" />
+        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_special_instruction_for_service" />
         <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_fill_phone_number_box" />
+        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes" />
         <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_set_route" />
       </list>
     </recent_temporary>
@@ -295,7 +340,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719665635739</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="100%">
+      <option name="closed" value="true" />
+      <created>1719716237800</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1719716237800</updated>
+    </task>
+    <task id="LOCAL-00021" summary="100%">
+      <option name="closed" value="true" />
+      <created>1719716447092</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1719716447092</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -332,6 +393,7 @@
     <MESSAGE value="Test 1,2,4,5,6,7 Passed&#10;Incluir implicit wait como metodo para incluirlo como paso en cada prueba&#10;revisando 3... Metodo phone_popup_window_input_box" />
     <MESSAGE value="Test 1,2,3,4,5,6,7 Passed&#10;&#10;Se eliminaron imports sin utilizar, las pruebas siguen funcionando." />
     <MESSAGE value="Test 1,2,3,4,5,6,7 Passed&#10;&#10;Se eliminan Metodos sin utilizar, se agregaron comentarios a los test y a los metodos." />
-    <option name="LAST_COMMIT_MESSAGE" value="Test 1,2,3,4,5,6,7 Passed&#10;&#10;Se eliminan Metodos sin utilizar, se agregaron comentarios a los test y a los metodos." />
+    <MESSAGE value="100%" />
+    <option name="LAST_COMMIT_MESSAGE" value="100%" />
   </component>
 </project>

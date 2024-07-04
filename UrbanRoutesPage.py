@@ -53,6 +53,9 @@ class UrbanRoutesPage:
     def comfort_fare_button(self):                                              # Hace click para seleccionar la Tarifa "Comfort"
         self.driver.find_element(*locators.comfort_fare).click()
 
+    def selected_comfort_fare(self):
+       self.driver.find_element(*locators.comfort_fare_selected).get_attribute('class') == 'tcard active'
+
     def set_phone_input_box(self):                                               # Hace click en casilla Numero de telefono en menu de pedido
         self.driver.find_element(*locators.phone_input_box).click()
 
@@ -85,8 +88,13 @@ class UrbanRoutesPage:
     def exit_payment_popup(self):                                               # Dar click en boton (X) de la ventana emergente para vincular tarjeta como medio de pago
         self.driver.find_element(*locators.exit_payment_popup_window).click()
 
+    def user_payment_method(self):
+        self.driver.find_element(*locators.users_payment_method)
     def click_message_box_input(self):                                          # Hace click en casilla para enviar mensaje al conductor
         self.driver.find_element(*locators.click_message_box).send_keys(data.MESSAGE_FOR_DRIVER)
+
+    def message_sent_to_driver(self):
+        return self.driver.find_element(*locators.click_message_box).get_attribute("value")
 
     def blanket_and_scarves(self):                                              # Dar click en checkbox para seleccionar manta y pañuelos como pedido especial para el servicio
         self.driver.find_element(*locators.blanket_and_scarves_request).click()

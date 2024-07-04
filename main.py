@@ -25,7 +25,7 @@ class TestUrbanRoutes:
         set_route.set_to(data.ADDRESS_TO)
         from_1 = set_route.get_from()
         assert from_1 == data.ADDRESS_FROM
-        set_route.click_book_a_taxi_button()
+        set_route.click_book_a_taxi_button()                        #OK
 
     #prueba 2  Seleccionar la tarifa Comfort.
     def test_comfort_fare(self):
@@ -35,9 +35,9 @@ class TestUrbanRoutes:
         set_route.set_to(data.ADDRESS_TO)
         set_route.click_book_a_taxi_button()
         set_route.comfort_fare_button()
-        # assert set_route.comfort_fare_button()    Fix this assert!!!!
+        assert self.set_route.find_element(*UrbanRoutesPage.selected_comfort_fare).get_attribute('class') == 'tcard active'  #Revisar este assert
 
-    # prueba 3 - Rellenar el número de teléfono.
+    # prueba 3 - Rellenar el número de teléfono
     def test_fill_phone_number_box(self):  # Rellenar el número de teléfono.
         self.driver.get(data.URBAN_ROUTES_URL)
         set_route = UrbanRoutesPage(self.driver)
@@ -49,6 +49,7 @@ class TestUrbanRoutes:
         set_route.phone_popup_next()
         set_route.sms_code_inputbox()
         set_route.code_confirm_button()
+        #assert set_route.phone_popup_input_box() == data.PHONE_NUMBER
 
     #prueba 4 Agregar una tarjeta de crédito.
     def test_add_payment_method(self):  # Agregar tarjeta de credito como metodo de pago
@@ -62,6 +63,7 @@ class TestUrbanRoutes:
         set_route.add_credit_card_number()
         set_route.cc_code_field()
         set_route.exit_payment_popup()
+        #assert set_route.user_payment_method()   #FIX THIS ONE!!!
 
     #prueba 5 Escribir un mensaje para el controlador.
     def test_special_instruction_for_service(self):
@@ -73,6 +75,7 @@ class TestUrbanRoutes:
         set_route.comfort_fare_button()
         sleep(1)
         set_route.click_message_box_input()
+        assert set_route.message_sent_to_driver() == data.MESSAGE_FOR_DRIVER   #OK
 
     # prueba 6 Pedir una manta y pañuelos.
     def test_ordering_blanket(self):
