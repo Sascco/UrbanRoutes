@@ -70,6 +70,9 @@ class UrbanRoutesPage:
         print(code_sms)
         self.driver.find_element(*locators.add_sms_code).send_keys(code_sms)
 
+    def customers_phone(self):
+        return self.driver.find_element(*locators.add_phone_input_box).get_attribute("value")
+
     def code_confirm_button(self):                                              # Hace click en el boton CONFIRMAR despues de generar el codigo via SMS
         self.driver.find_element(*locators.confirm_button_sms).click()
 
