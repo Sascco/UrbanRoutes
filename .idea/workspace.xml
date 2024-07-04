@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68f574cb-175f-4963-aac7-54223c6da432" name="Changes" comment="100%">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="68f574cb-175f-4963-aac7-54223c6da432" name="Changes" comment="100%&#10;customers_phone assert">
       <change beforePath="$PROJECT_DIR$/UrbanRoutesPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanRoutesPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +58,7 @@
       <recent name="C:\Users\Sascc\OneDrive\Desktop\QA\proyecto_7_windows" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for main.TestUrbanRoutes.test_fill_phone_number_box">
+  <component name="RunManager" selected="Python tests.Python tests for main.TestUrbanRoutes.test_add_payment_method">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="proyecto_7_windows" />
       <option name="ENV_FILES" value="" />
@@ -160,9 +158,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_add_payment_method" />
         <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_fill_phone_number_box" />
         <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_special_instruction_for_service" />
-        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_add_payment_method" />
         <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes" />
         <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_set_route" />
       </list>
@@ -355,7 +353,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719716447092</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="100%&#10;customers_phone assert">
+      <option name="closed" value="true" />
+      <created>1720094462369</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1720094462369</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -393,6 +399,7 @@
     <MESSAGE value="Test 1,2,3,4,5,6,7 Passed&#10;&#10;Se eliminaron imports sin utilizar, las pruebas siguen funcionando." />
     <MESSAGE value="Test 1,2,3,4,5,6,7 Passed&#10;&#10;Se eliminan Metodos sin utilizar, se agregaron comentarios a los test y a los metodos." />
     <MESSAGE value="100%" />
-    <option name="LAST_COMMIT_MESSAGE" value="100%" />
+    <MESSAGE value="100%&#10;customers_phone assert" />
+    <option name="LAST_COMMIT_MESSAGE" value="100%&#10;customers_phone assert" />
   </component>
 </project>

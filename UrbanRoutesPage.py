@@ -92,11 +92,11 @@ class UrbanRoutesPage:
         self.driver.find_element(*locators.exit_payment_popup_window).click()
 
     def user_payment_method(self):
-        self.driver.find_element(*locators.users_payment_method)
+        return self.driver.find_element(*locators.add_cc_number).get_attribute("value")
     def click_message_box_input(self):                                          # Hace click en casilla para enviar mensaje al conductor
         self.driver.find_element(*locators.click_message_box).send_keys(data.MESSAGE_FOR_DRIVER)
 
-    def message_sent_to_driver(self):
+    def message_sent_to_driver(self):                                           # Metodo para comprobar el número de la tarjeta de credito
         return self.driver.find_element(*locators.click_message_box).get_attribute("value")
 
     def blanket_and_scarves(self):                                              # Dar click en checkbox para seleccionar manta y pañuelos como pedido especial para el servicio

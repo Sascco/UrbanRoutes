@@ -64,7 +64,7 @@ class TestUrbanRoutes:
         set_route.add_credit_card_number()
         set_route.cc_code_field()
         set_route.exit_payment_popup()
-        #assert set_route.user_payment_method()   #FIX THIS ONE!!!
+        assert set_route.user_payment_method() == data.CARD_NUMBER   #FIX THIS ONE!!!
 
     #prueba 5 Escribir un mensaje para el controlador.
     def test_special_instruction_for_service(self):
