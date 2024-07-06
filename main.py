@@ -104,7 +104,12 @@ class TestUrbanRoutes:
         set_route.order_requirements()
         set_route.click_add_ice_cream_button()
         set_route.click_add_ice_cream_button()
+        ice_cream_count = set_route.amount_ice_cream_ordered()
+        assert ice_cream_count == 2, f"Se esperaba que la cantidad de helado ordenado sea 2, pero es {ice_cream_count}"
+#el metodo amount_ice_cream_ordered tiene una variable element que tiene como valor la cantidad de helado y lo devuelve como int.
+
         ## assert ######
+
 
     def test_waiting_for_taxi_modal(self):                                 # aparece modal para pedir taxi
         self.driver.get(data.URBAN_ROUTES_URL)
