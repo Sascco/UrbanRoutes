@@ -53,8 +53,9 @@ class UrbanRoutesPage:
     def comfort_fare_button(self):                                              # Hace click para seleccionar la Tarifa "Comfort"
         self.driver.find_element(*locators.comfort_fare).click()
 
-    def selected_comfort_fare(self):
-       self.driver.find_element(*locators.comfort_fare_selected).get_attribute('class') == 'tcard active'
+    def comfort_menu(self):                                                     # Metodo para comprobar que se haya elegido la tarifa "Comfort", ya que es la única que tiene "Helado" disponible en el pedido.
+        fare = self.driver.find_element(*locators.comfort_helado).text
+        return fare
 
     def set_phone_input_box(self):                                               # Hace click en casilla Numero de telefono en menu de pedido
         self.driver.find_element(*locators.phone_input_box).click()

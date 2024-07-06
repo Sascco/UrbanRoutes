@@ -1,4 +1,5 @@
 import data
+import locators
 from UrbanRoutesPage import UrbanRoutesPage
 from selenium import webdriver
 from time import sleep
@@ -34,9 +35,11 @@ class TestUrbanRoutes:
         set_route.set_from(data.ADDRESS_FROM)
         set_route.set_to(data.ADDRESS_TO)
         set_route.click_book_a_taxi_button()
-        set_route.comfort_fare_button()
+        set_route.comfort_fare_button() #OJO   Metodo para confirmar tarifa Comfort
+        sleep(2)
+        set_route.order_requirements()
+        assert set_route.comfort_menu() == 'Helado'                 #OK
 
-        #assert self.set_route.find_element(*UrbanRoutesPage.selected_comfort_fare).get_attribute('class') == 'tcard active'  #Revisar este assert
 
     # prueba 3 - Rellenar el número de teléfono
     def test_fill_phone_number_box(self):  # Rellenar el número de teléfono.
@@ -64,7 +67,7 @@ class TestUrbanRoutes:
         set_route.add_credit_card_number()
         set_route.cc_code_field()
         set_route.exit_payment_popup()
-        assert set_route.user_payment_method() == data.CARD_NUMBER   #FIX THIS ONE!!!
+        assert set_route.user_payment_method() == data.CARD_NUMBER            #OK
 
     #prueba 5 Escribir un mensaje para el controlador.
     def test_special_instruction_for_service(self):
@@ -87,6 +90,7 @@ class TestUrbanRoutes:
         set_route.click_book_a_taxi_button()
         set_route.comfort_fare_button()
         set_route.blanket_and_scarves()
+        ## assert ######
 
     # # prueba 7 Pedir 2 helados.
     def test_add_icecream(self):
@@ -100,6 +104,7 @@ class TestUrbanRoutes:
         set_route.order_requirements()
         set_route.click_add_ice_cream_button()
         set_route.click_add_ice_cream_button()
+        ## assert ######
 
     def test_waiting_for_taxi_modal(self):                                 # aparece modal para pedir taxi
         self.driver.get(data.URBAN_ROUTES_URL)
@@ -115,6 +120,7 @@ class TestUrbanRoutes:
         set_route.code_confirm_button()
         set_route.click_order_taxi()
         sleep(10)
+        ## assert ######
 
     @classmethod
     def teardown_class(cls):
