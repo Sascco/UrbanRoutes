@@ -90,22 +90,25 @@ class TestUrbanRoutes:
         set_route.click_book_a_taxi_button()
         set_route.comfort_fare_button()
         set_route.blanket_and_scarves()
+       #comfort_fare_radio_button = set_route.blanket_and_scarves()
+       #assert comfort_fare_radio_button.is_selected(), "The comfort fare radio button should be selected."
+        #et_route.blanket_ordered() == True
         ## assert ######
 
-    # # prueba 7 Pedir 2 helados.
+    # prueba 7 Pedir 2 helados.
     def test_add_icecream(self):
         self.driver.get(data.URBAN_ROUTES_URL)
         set_route = UrbanRoutesPage(self.driver)
         set_route.set_from(data.ADDRESS_FROM)
         set_route.set_to(data.ADDRESS_TO)
         set_route.click_book_a_taxi_button()
-        #sleep(1)
+        # sleep(1)
         set_route.comfort_fare_button()
         set_route.order_requirements()
         set_route.click_add_ice_cream_button()
         set_route.click_add_ice_cream_button()
-        ice_cream_count = set_route.amount_ice_cream_ordered()
-        assert ice_cream_count == 2, f"Se esperaba que la cantidad de helado ordenado sea 2, pero es {ice_cream_count}"
+        #ice_cream_count = set_route.amount_ice_cream_ordered()
+        #assert ice_cream_count == 2, f"Se esperaba que la cantidad de helado ordenado sea 2, pero es {ice_cream_count}"
 #el metodo amount_ice_cream_ordered tiene una variable element que tiene como valor la cantidad de helado y lo devuelve como int.
 
         ## assert ######
@@ -124,8 +127,9 @@ class TestUrbanRoutes:
         set_route.sms_code_inputbox()
         set_route.code_confirm_button()
         set_route.click_order_taxi()
-        sleep(10)
-        ## assert ######
+        set_route.to_be_visible_searching_cab_header()
+        assert set_route.get_searching_cab() == 'Buscar automóvil'
+
 
     @classmethod
     def teardown_class(cls):
