@@ -26,7 +26,7 @@ class TestUrbanRoutes:
         set_route.set_to(data.ADDRESS_TO)
         from_1 = set_route.get_from()
         assert from_1 == data.ADDRESS_FROM
-        set_route.click_book_a_taxi_button()                        #OK
+        set_route.click_book_a_taxi_button()
 
     #prueba 2  Seleccionar la tarifa Comfort.
     def test_comfort_fare(self):
@@ -35,10 +35,10 @@ class TestUrbanRoutes:
         set_route.set_from(data.ADDRESS_FROM)
         set_route.set_to(data.ADDRESS_TO)
         set_route.click_book_a_taxi_button()
-        set_route.comfort_fare_button() #OJO   Metodo para confirmar tarifa Comfort
+        set_route.comfort_fare_button()
         sleep(2)
         set_route.order_requirements()
-        assert set_route.comfort_menu() == 'Helado'                 #OK
+        assert set_route.comfort_menu() == 'Helado'
 
 
     # prueba 3 - Rellenar el número de teléfono
@@ -53,7 +53,7 @@ class TestUrbanRoutes:
         set_route.phone_popup_next()
         set_route.sms_code_inputbox()
         set_route.code_confirm_button()
-        assert set_route.customers_phone() == data.PHONE_NUMBER   #OK
+        assert set_route.customers_phone() == data.PHONE_NUMBER
 
     #prueba 4 Agregar una tarjeta de crédito.
     def test_add_payment_method(self):  # Agregar tarjeta de credito como metodo de pago
@@ -67,7 +67,7 @@ class TestUrbanRoutes:
         set_route.add_credit_card_number()
         set_route.cc_code_field()
         set_route.exit_payment_popup()
-        assert set_route.user_payment_method() == data.CARD_NUMBER            #OK
+        assert set_route.user_payment_method() == data.CARD_NUMBER
 
     #prueba 5 Escribir un mensaje para el controlador.
     def test_special_instruction_for_service(self):
@@ -79,7 +79,7 @@ class TestUrbanRoutes:
         set_route.comfort_fare_button()
         sleep(1)
         set_route.click_message_box_input()
-        assert set_route.message_sent_to_driver() == data.MESSAGE_FOR_DRIVER   #OK
+        assert set_route.message_sent_to_driver() == data.MESSAGE_FOR_DRIVER
 
     # prueba 6 Pedir una manta y pañuelos.
     def test_ordering_blanket(self):
@@ -90,10 +90,7 @@ class TestUrbanRoutes:
         set_route.click_book_a_taxi_button()
         set_route.comfort_fare_button()
         set_route.blanket_and_scarves()
-       #comfort_fare_radio_button = set_route.blanket_and_scarves()
-       #assert comfort_fare_radio_button.is_selected(), "The comfort fare radio button should be selected."
-        #et_route.blanket_ordered() == True
-        ## assert ######
+
 
     # prueba 7 Pedir 2 helados.
     def test_add_icecream(self):
@@ -107,11 +104,7 @@ class TestUrbanRoutes:
         set_route.order_requirements()
         set_route.click_add_ice_cream_button()
         set_route.click_add_ice_cream_button()
-        #ice_cream_count = set_route.amount_ice_cream_ordered()
-        #assert ice_cream_count == 2, f"Se esperaba que la cantidad de helado ordenado sea 2, pero es {ice_cream_count}"
-#el metodo amount_ice_cream_ordered tiene una variable element que tiene como valor la cantidad de helado y lo devuelve como int.
 
-        ## assert ######
 
 
     def test_waiting_for_taxi_modal(self):                                 # aparece modal para pedir taxi
