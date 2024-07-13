@@ -79,7 +79,7 @@ class TestUrbanRoutes:
         set_route.comfort_fare_button()
         sleep(1)
         set_route.click_message_box_input()
-        assert set_route.message_sent_to_driver() == data.MESSAGE_FOR_DRIVER
+        assert set_route.message_sent_to_driver() == data.MESSAGE_FOR_DRIVER   #OK
 
     # prueba 6 Pedir una manta y pañuelos.
     def test_ordering_blanket(self):
@@ -89,8 +89,8 @@ class TestUrbanRoutes:
         set_route.set_to(data.ADDRESS_TO)
         set_route.click_book_a_taxi_button()
         set_route.comfort_fare_button()
-        set_route.blanket_and_scarves()
-
+        set_route.blanket_and_scarves() #
+        assert set_route.blanket_ordered()
 
     # prueba 7 Pedir 2 helados.
     def test_add_icecream(self):
@@ -103,9 +103,7 @@ class TestUrbanRoutes:
         set_route.comfort_fare_button()
         set_route.order_requirements()
         set_route.click_add_ice_cream_button()
-        set_route.click_add_ice_cream_button()
-
-
+        assert set_route.amount_ice_cream_ordered() == 2
 
     def test_waiting_for_taxi_modal(self):                                 # aparece modal para pedir taxi
         self.driver.get(data.URBAN_ROUTES_URL)

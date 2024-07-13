@@ -27,7 +27,7 @@ class locators:                                                                 
     order_requirements_menu = (By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[4]')
     blanket_and_scarves_request = (By.XPATH, "(//span[@class='slider round'])[1]")                                  #Toggle para seleccionar manta y pañuelos como requerimiento para el viaje
     add_ice_cream_button = (By.XPATH, "(//div[@class='counter-plus'])[1]")                                          #Counter for icecream - terminar localizadores y revisar metodos y funciones.
-    #add_ice_cream_button = (By.XPATH, "(//div[@class='counter-plus'])[1]")
+    ice_cream_counter = (By.XPATH, "(//div[@class='counter']//div)[2]")
     ice_cream_ordered = (By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[2]/div[3]/div/div[2]/div[1]/div/div[2]/div/div[2]')
     book_order_button = (By.XPATH, '//*[@id="root"]/div/div[3]/div[4]/button/span[2]')                              #Boton para solicitar servicio una vez se completan los requerimientos
     searching_cab = (By.CSS_SELECTOR, '.order-header-title')

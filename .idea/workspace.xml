@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68f574cb-175f-4963-aac7-54223c6da432" name="Changes" comment="100%&#10;1,2,3,4,5 Asserts done.">
+    <list default="true" id="68f574cb-175f-4963-aac7-54223c6da432" name="Changes" comment="100%">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UrbanRoutesPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanRoutesPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
@@ -65,7 +65,7 @@
       <recent name="C:\Users\Sascc\OneDrive\Desktop\QA\proyecto_7_windows" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for main.TestUrbanRoutes.test_waiting_for_taxi_modal">
+  <component name="RunManager" selected="Python tests.Python tests for main.TestUrbanRoutes.test_ordering_blanket">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="proyecto_7_windows" />
       <option name="ENV_FILES" value="" />
@@ -88,6 +88,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for main.TestUrbanRoutes" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="proyecto_7_windows" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;main.TestUrbanRoutes&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for main.TestUrbanRoutes.test_add_icecream" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="proyecto_7_windows" />
       <option name="ENV_FILES" value="" />
@@ -100,21 +115,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;main.TestUrbanRoutes.test_add_icecream&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for main.TestUrbanRoutes.test_comfort_fare" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="proyecto_7_windows" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main.TestUrbanRoutes.test_comfort_fare&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -165,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_waiting_for_taxi_modal" />
-        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_add_icecream" />
         <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_ordering_blanket" />
+        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes" />
+        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_add_icecream" />
+        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_waiting_for_taxi_modal" />
         <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_fill_phone_number_box" />
-        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_comfort_fare" />
       </list>
     </recent_temporary>
   </component>
@@ -384,7 +384,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720231801149</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="100%&#10;1,2,3,4,5,8 Asserts done.&#10;6,7">
+      <option name="closed" value="true" />
+      <created>1720546295684</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1720546295684</updated>
+    </task>
+    <task id="LOCAL-00026" summary="100%">
+      <option name="closed" value="true" />
+      <created>1720667972871</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1720667972871</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -421,9 +437,10 @@
     <MESSAGE value="Test 1,2,4,5,6,7 Passed&#10;Incluir implicit wait como metodo para incluirlo como paso en cada prueba&#10;revisando 3... Metodo phone_popup_window_input_box" />
     <MESSAGE value="Test 1,2,3,4,5,6,7 Passed&#10;&#10;Se eliminaron imports sin utilizar, las pruebas siguen funcionando." />
     <MESSAGE value="Test 1,2,3,4,5,6,7 Passed&#10;&#10;Se eliminan Metodos sin utilizar, se agregaron comentarios a los test y a los metodos." />
-    <MESSAGE value="100%" />
     <MESSAGE value="100%&#10;customers_phone assert" />
     <MESSAGE value="100%&#10;1,2,3,4,5 Asserts done." />
-    <option name="LAST_COMMIT_MESSAGE" value="100%&#10;1,2,3,4,5 Asserts done." />
+    <MESSAGE value="100%&#10;1,2,3,4,5,8 Asserts done.&#10;6,7" />
+    <MESSAGE value="100%" />
+    <option name="LAST_COMMIT_MESSAGE" value="100%" />
   </component>
 </project>

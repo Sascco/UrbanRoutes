@@ -102,6 +102,8 @@ class UrbanRoutesPage:
     def message_sent_to_driver(self):                                           # Metodo para comprobar el número de la tarjeta de credito
         return self.driver.find_element(*locators.click_message_box).get_attribute("value")
 
+
+
     def blanket_and_scarves(self):                                              # Dar click en checkbox para seleccionar manta y pañuelos como pedido especial para el servicio
         self.driver.find_element(*locators.blanket_and_scarves_request).click()
 
@@ -109,13 +111,17 @@ class UrbanRoutesPage:
         self.driver.find_element(*locators.order_requirements_menu).click()
 
     def blanket_ordered(self):                                                  # Metodo para comprobar que el pedido fue correctamente realizado.
-        blanket = self.driver.find_element(*locators.blanket_and_scarves_request).is_selected
+        blanket = self.driver.find_element(*locators.blanket_and_scarves_request).is_selected()
         return blanket
+
 
     def click_add_ice_cream_button(self):                                       # Hace click en (+) para aumentar en 1 la cantidad de Helado una vez el menú se despliega
        self.driver.find_element(*locators.add_ice_cream_button).click()
+       self.driver.find_element(*locators.add_ice_cream_button).click()
 
-    #def amount_ice_cream_ordered(self):                                         # Devuelve la cantidad de helado ordenada
+    def amount_ice_cream_ordered(self):                                         # Devuelve la cantidad de helado ordenada
+        icecream = self.driver.find_element(*locators.ice_cream_ordered)
+        return int(icecream.text)
         #element = self.driver.find_element(*locators.ice_cream_ordered)
         #return int(element.text)
 
