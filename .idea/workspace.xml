@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68f574cb-175f-4963-aac7-54223c6da432" name="Changes" comment="100%">
+    <list default="true" id="68f574cb-175f-4963-aac7-54223c6da432" name="Changes" comment="Test 7 pending assert.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrbanRoutesPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanRoutesPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +62,7 @@
       <recent name="C:\Users\Sascc\OneDrive\Desktop\QA\proyecto_7_windows" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for main.TestUrbanRoutes.test_add_icecream">
+  <component name="RunManager" selected="Python tests.Python tests for main.TestUrbanRoutes">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="proyecto_7_windows" />
       <option name="ENV_FILES" value="" />
@@ -88,6 +85,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for main.TestUrbanRoutes" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="proyecto_7_windows" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;main.TestUrbanRoutes&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for main.TestUrbanRoutes.test_add_icecream" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="proyecto_7_windows" />
       <option name="ENV_FILES" value="" />
@@ -100,36 +112,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;main.TestUrbanRoutes.test_add_icecream&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for main.TestUrbanRoutes.test_add_payment_method" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="proyecto_7_windows" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main.TestUrbanRoutes.test_add_payment_method&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for main.TestUrbanRoutes.test_fill_phone_number_box" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="proyecto_7_windows" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main.TestUrbanRoutes.test_fill_phone_number_box&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -163,13 +145,28 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for main.TestUrbanRoutes.test_waiting_for_taxi_modal" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="proyecto_7_windows" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;main.TestUrbanRoutes.test_waiting_for_taxi_modal&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_add_icecream" />
+        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes" />
         <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_ordering_blanket" />
+        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_waiting_for_taxi_modal" />
+        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_add_icecream" />
         <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_special_instruction_for_service" />
-        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_add_payment_method" />
-        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_fill_phone_number_box" />
       </list>
     </recent_temporary>
   </component>
@@ -400,7 +397,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720667972871</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Test 7 pending assert.">
+      <option name="closed" value="true" />
+      <created>1721431414715</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1721431414715</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,6 +446,7 @@
     <MESSAGE value="100%&#10;1,2,3,4,5 Asserts done." />
     <MESSAGE value="100%&#10;1,2,3,4,5,8 Asserts done.&#10;6,7" />
     <MESSAGE value="100%" />
-    <option name="LAST_COMMIT_MESSAGE" value="100%" />
+    <MESSAGE value="Test 7 pending assert." />
+    <option name="LAST_COMMIT_MESSAGE" value="Test 7 pending assert." />
   </component>
 </project>

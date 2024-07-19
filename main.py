@@ -92,9 +92,8 @@ class TestUrbanRoutes:
         set_route.click_book_a_taxi_button()
         set_route.comfort_fare_button()
         set_route.order_requirements()
-        sleep(3)
-        set_route.blanket_and_scarves()
         sleep(5)
+        set_route.blanket_and_scarves()
         assert set_route.blanket_ordered()
 
 
@@ -105,11 +104,9 @@ class TestUrbanRoutes:
         set_route.set_from(data.ADDRESS_FROM)
         set_route.set_to(data.ADDRESS_TO)
         set_route.click_book_a_taxi_button()
-        # sleep(1)
         set_route.comfort_fare_button()
         set_route.order_requirements()
         set_route.click_add_ice_cream_button()
-        sleep(10)
         assert set_route.amount_ice_cream_ordered() == 2
 
     def test_waiting_for_taxi_modal(self):                                 # aparece modal para pedir taxi
