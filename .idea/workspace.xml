@@ -36,36 +36,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for main.TestUrbanRoutes.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_add_ice_creams.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_add_icecream.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_add_payment_method.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_comfort_fare.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_fill_phone_number_box.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_ordering_blanket.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_set_route.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_special_instruction_for_service.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_waiting_for_taxi_modal.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in main.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Home.executor&quot;: &quot;Run&quot;,
-    &quot;Python.UrbanRoutesPage.executor&quot;: &quot;Run&quot;,
-    &quot;Python.data.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sascc/OneDrive/Desktop/QA/proyecto_7_windows&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.VCS&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for main.TestUrbanRoutes.executor": "Run",
+    "Python tests.Python tests for main.TestUrbanRoutes.test_add_ice_creams.executor": "Run",
+    "Python tests.Python tests for main.TestUrbanRoutes.test_add_icecream.executor": "Run",
+    "Python tests.Python tests for main.TestUrbanRoutes.test_add_payment_method.executor": "Run",
+    "Python tests.Python tests for main.TestUrbanRoutes.test_comfort_fare.executor": "Run",
+    "Python tests.Python tests for main.TestUrbanRoutes.test_fill_phone_number_box.executor": "Run",
+    "Python tests.Python tests for main.TestUrbanRoutes.test_ordering_blanket.executor": "Run",
+    "Python tests.Python tests for main.TestUrbanRoutes.test_set_route.executor": "Run",
+    "Python tests.Python tests for main.TestUrbanRoutes.test_special_instruction_for_service.executor": "Run",
+    "Python tests.Python tests for main.TestUrbanRoutes.test_waiting_for_taxi_modal.executor": "Run",
+    "Python tests.Python tests in main.py.executor": "Run",
+    "Python.Home.executor": "Run",
+    "Python.UrbanRoutesPage.executor": "Run",
+    "Python.data.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Sascc/OneDrive/Desktop/QA/proyecto_7_windows",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.VCS"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Sascc\OneDrive\Desktop\QA\proyecto_7_windows" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for main.TestUrbanRoutes.test_ordering_blanket">
+  <component name="RunManager" selected="Python tests.Python tests for main.TestUrbanRoutes.test_add_icecream">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="proyecto_7_windows" />
       <option name="ENV_FILES" value="" />
@@ -88,21 +88,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for main.TestUrbanRoutes" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="proyecto_7_windows" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main.TestUrbanRoutes&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for main.TestUrbanRoutes.test_add_icecream" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="proyecto_7_windows" />
       <option name="ENV_FILES" value="" />
@@ -115,6 +100,21 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;main.TestUrbanRoutes.test_add_icecream&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for main.TestUrbanRoutes.test_add_payment_method" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="proyecto_7_windows" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;main.TestUrbanRoutes.test_add_payment_method&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -148,7 +148,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for main.TestUrbanRoutes.test_waiting_for_taxi_modal" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for main.TestUrbanRoutes.test_special_instruction_for_service" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="proyecto_7_windows" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,16 +159,16 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main.TestUrbanRoutes.test_waiting_for_taxi_modal&quot;" />
+      <option name="_new_target" value="&quot;main.TestUrbanRoutes.test_special_instruction_for_service&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_ordering_blanket" />
-        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes" />
         <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_add_icecream" />
-        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_waiting_for_taxi_modal" />
+        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_ordering_blanket" />
+        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_special_instruction_for_service" />
+        <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_add_payment_method" />
         <item itemvalue="Python tests.Python tests for main.TestUrbanRoutes.test_fill_phone_number_box" />
       </list>
     </recent_temporary>

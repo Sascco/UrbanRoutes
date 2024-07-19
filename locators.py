@@ -6,7 +6,7 @@ class locators:                                                                 
     to_field = (By.ID, 'to')                                                                                        #Casilla para ingrear direccion de destino
     book_a_taxi_button = (By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[1]/div[3]/div[1]/button')                #Boton para pedir taxi
     comfort_fare = (By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[1]/div[5]')                  #Icono para seleccionar la tarifa comfort
-    comfort_helado = (By.XPATH, "//div[contains(text(), 'Helado')]")
+    comfort_helado = (By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[2]/div[3]/div/div[1]')
     comfort_card_name = (By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[1]/div[5]/div[2]')
     fare_menu = (By.CLASS_NAME, 'reqs open')
     phone_input_box = (By.XPATH, "//div[text()='Número de teléfono']")                                              #Casilla para ingresar telefono en menu inicial
@@ -25,9 +25,12 @@ class locators:                                                                 
     exit_payment_popup_window = (By.XPATH, '//*[@id="root"]/div/div[2]/div[2]/div[2]/button')                       #Boton para cerrar ventana emergente para agregar tarjeta como medio de pago
     click_message_box = (By.ID, "comment")                                                                          #Casilla para ingresar mensaje para el conductor, se importa desde data.py
     order_requirements_menu = (By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[4]')
-    blanket_and_scarves_request = (By.XPATH, "(//span[@class='slider round'])[1]")                                  #Toggle para seleccionar manta y pañuelos como requerimiento para el viaje
+    blanket_and_scarves_request = (By.XPATH, '/html/body/div/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[2]/div[1]/div/div[2]/div/span')#Toggle para seleccionar manta y pañuelos como requerimiento para el viaje
+    blanket_requested = (By.XPATH, '/html/body/div/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[2]/div[1]/div/div[2]/div/input')
     add_ice_cream_button = (By.XPATH, "(//div[@class='counter-plus'])[1]")                                          #Counter for icecream - terminar localizadores y revisar metodos y funciones.
-    ice_cream_counter = (By.XPATH, "(//div[@class='counter']//div)[2]")
+    ice_cream_counter = (By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[2]/div[3]/div/div[2]/div[1]/div/div[2]/div/div[2]')
     ice_cream_ordered = (By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[2]/div[3]/div/div[2]/div[1]/div/div[2]/div/div[2]')
     book_order_button = (By.XPATH, '//*[@id="root"]/div/div[3]/div[4]/button/span[2]')                              #Boton para solicitar servicio una vez se completan los requerimientos
     searching_cab = (By.CSS_SELECTOR, '.order-header-title')
+
+

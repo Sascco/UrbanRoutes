@@ -38,7 +38,9 @@ class TestUrbanRoutes:
         set_route.comfort_fare_button()
         sleep(2)
         set_route.order_requirements()
-        assert set_route.comfort_menu() == 'Helado'
+        sleep(2)
+        assert set_route.comfort_menu() == 'Cubeta de helado'
+        #sleep(2)
 
 
     # prueba 3 - Rellenar el número de teléfono
@@ -89,8 +91,12 @@ class TestUrbanRoutes:
         set_route.set_to(data.ADDRESS_TO)
         set_route.click_book_a_taxi_button()
         set_route.comfort_fare_button()
-        set_route.blanket_and_scarves() #
+        set_route.order_requirements()
+        sleep(3)
+        set_route.blanket_and_scarves()
+        sleep(5)
         assert set_route.blanket_ordered()
+
 
     # prueba 7 Pedir 2 helados.
     def test_add_icecream(self):
@@ -103,6 +109,7 @@ class TestUrbanRoutes:
         set_route.comfort_fare_button()
         set_route.order_requirements()
         set_route.click_add_ice_cream_button()
+        sleep(10)
         assert set_route.amount_ice_cream_ordered() == 2
 
     def test_waiting_for_taxi_modal(self):                                 # aparece modal para pedir taxi
